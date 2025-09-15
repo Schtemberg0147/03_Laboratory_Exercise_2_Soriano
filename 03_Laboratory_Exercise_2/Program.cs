@@ -16,7 +16,7 @@ namespace _03_Laboratory_Exercise_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmAddProduct());
         }
     }
 }

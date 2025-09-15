@@ -1,6 +1,6 @@
 ﻿namespace _03_Laboratory_Exercise_2
 {
-    partial class Form1
+    partial class frmAddProduct
     {
         /// <summary>
         /// Required designer variable.
@@ -182,6 +182,7 @@
             this.btnAddProduct.TabIndex = 12;
             this.btnAddProduct.Text = "button1";
             this.btnAddProduct.UseVisualStyleBackColor = true;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // gripViewProductList
             // 
@@ -191,7 +192,7 @@
             this.gripViewProductList.Size = new System.Drawing.Size(718, 96);
             this.gripViewProductList.TabIndex = 13;
             // 
-            // Form1
+            // frmAddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -213,8 +214,9 @@
             this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.lblProduct);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "frmAddProduct";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmAddProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gripViewProductList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
