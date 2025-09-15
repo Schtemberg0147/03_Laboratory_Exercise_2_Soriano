@@ -40,12 +40,12 @@
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtSellPrice = new System.Windows.Forms.TextBox();
             this.cbCategory = new System.Windows.Forms.ComboBox();
-            this.dtPicketMfgDate = new System.Windows.Forms.DateTimePicker();
+            this.dtPickerMfgDate = new System.Windows.Forms.DateTimePicker();
             this.dtPickerExpDate = new System.Windows.Forms.DateTimePicker();
             this.richTxtDescription = new System.Windows.Forms.RichTextBox();
             this.btnAddProduct = new System.Windows.Forms.Button();
-            this.gripViewProductList = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.gripViewProductList)).BeginInit();
+            this.gridViewProductList = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewProductList)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -149,14 +149,14 @@
             this.cbCategory.Size = new System.Drawing.Size(121, 21);
             this.cbCategory.TabIndex = 9;
             // 
-            // dtPicketMfgDate
+            // dtPickerMfgDate
             // 
-            this.dtPicketMfgDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtPicketMfgDate.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.dtPicketMfgDate.Location = new System.Drawing.Point(129, 145);
-            this.dtPicketMfgDate.Name = "dtPicketMfgDate";
-            this.dtPicketMfgDate.Size = new System.Drawing.Size(200, 20);
-            this.dtPicketMfgDate.TabIndex = 10;
+            this.dtPickerMfgDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtPickerMfgDate.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.dtPickerMfgDate.Location = new System.Drawing.Point(129, 145);
+            this.dtPickerMfgDate.Name = "dtPickerMfgDate";
+            this.dtPickerMfgDate.Size = new System.Drawing.Size(200, 20);
+            this.dtPickerMfgDate.TabIndex = 10;
             // 
             // dtPickerExpDate
             // 
@@ -184,24 +184,24 @@
             this.btnAddProduct.UseVisualStyleBackColor = true;
             this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
-            // gripViewProductList
+            // gridViewProductList
             // 
-            this.gripViewProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gripViewProductList.Location = new System.Drawing.Point(26, 337);
-            this.gripViewProductList.Name = "gripViewProductList";
-            this.gripViewProductList.Size = new System.Drawing.Size(718, 96);
-            this.gripViewProductList.TabIndex = 13;
+            this.gridViewProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridViewProductList.Location = new System.Drawing.Point(26, 337);
+            this.gridViewProductList.Name = "gridViewProductList";
+            this.gridViewProductList.Size = new System.Drawing.Size(718, 96);
+            this.gridViewProductList.TabIndex = 13;
             // 
             // frmAddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.gripViewProductList);
+            this.Controls.Add(this.gridViewProductList);
             this.Controls.Add(this.btnAddProduct);
             this.Controls.Add(this.richTxtDescription);
             this.Controls.Add(this.dtPickerExpDate);
-            this.Controls.Add(this.dtPicketMfgDate);
+            this.Controls.Add(this.dtPickerMfgDate);
             this.Controls.Add(this.cbCategory);
             this.Controls.Add(this.txtSellPrice);
             this.Controls.Add(this.txtQuantity);
@@ -217,7 +217,7 @@
             this.Name = "frmAddProduct";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmAddProduct_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gripViewProductList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewProductList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,11 +237,11 @@
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.TextBox txtSellPrice;
         private System.Windows.Forms.ComboBox cbCategory;
-        private System.Windows.Forms.DateTimePicker dtPicketMfgDate;
+        private System.Windows.Forms.DateTimePicker dtPickerMfgDate;
         private System.Windows.Forms.DateTimePicker dtPickerExpDate;
         private System.Windows.Forms.RichTextBox richTxtDescription;
         private System.Windows.Forms.Button btnAddProduct;
-        private System.Windows.Forms.DataGridView gripViewProductList;
+        private System.Windows.Forms.DataGridView gridViewProductList;
     }
 }
 
